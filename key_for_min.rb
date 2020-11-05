@@ -10,16 +10,14 @@ def key_for_min_value(name_hash)
   end 
   
   name_hash.each do |name, value|
-    if min_value > hash[value]
-      min_value = hash[value]
-      answer = hash[name]
+    if min_value > value
+      min_value = value
+      answer = name
     end
   end
   answer
   
   
-
-  name_hash.each do |key, value|
     if value <= num
       num = value
       answer = key
