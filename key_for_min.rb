@@ -9,8 +9,7 @@ def key_for_min_value(name_hash)
     min_value = name_hash.to_a[0][1]
   end 
   
-  #hash.select {|name, value| value}
-  hash.each do |name, value|
+  name_hash.each do |name, value|
     if min_value > hash[value]
       min_value = hash[value]
       answer = hash[name]
