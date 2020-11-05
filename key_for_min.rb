@@ -1,14 +1,14 @@
 # prereqs: iterators, hashes, conditional logic
 # Given a hash with numeric values, return the key for the smallest value
 
-def key_for_min_value(name_hash)
+def key_for_min_value(hash)
   
   min_value = 1000
-  #name_hash.select {|name, value| value}
-  name_hash.each do |name, value|
-    if min_value > name_hash[value]
-      min_value = name_hash[value]
-      answer = name_hash[name]
+  #hash.select {|name, value| value}
+  hash.each do |name, value|
+    if min_value > hash[value]
+      min_value = hash[value]
+      answer = hash[name]
     end
   end
   answer
